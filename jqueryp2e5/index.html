@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 5</title>
+  <style>
+ input[type=text] {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+table {
+  background-color:#275217;
+}
+  </style>
+</head>
+<body>
+  <table align="center">
+    <tr><td>
+    <label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" /></td></tr>
+    <tr><td>
+    <label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" /></td></tr>
+    <tr><td>
+    <button type="button" name="button">Envoyer</button></td></tr>
+  </table>
+  <script src="assets\js\jquery-3.3.1.min.js"></script>
+  <script>
+ //focusin si le curseur (le focus) de la souris et dessus la ligne en dessous s'applique      
+  $("input").focusin(function(){
+ // et donc les bordure de l'input devienne verte     
+        $(this).css('border-color', 'green');
+    });
+// focusout si le curseur (le focus) de la souris n'est plus dessus la ligne en dessous s'applique
+ $("input").focusout(function(){
+ // et donc les bordure de l'input devienne rouge    
+        $(this).css('border-color', 'red');
+    });
+  </script>
+</body>
+</html>

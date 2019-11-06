@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 2</title>
+</head>
+<body>
+  <img src="assets/images/image.jpg" id="image" />
+  <script src="assets\js\jquery-3.3.1.min.js"></script>
+  <script>
+// le $ signifie qu'on est sur du jquerry (en bref un javascript simplifié)      
+$(function(){
+ //on reprend le id image on lui attribue la fonction double click   
+  $("#image").dblclick(function() { 
+ // et enfin on attribut a cette fonction un changement de taille     
+    $("#image").width(500);  })
+})
+  </script>
+</body>
+</html>
